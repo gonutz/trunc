@@ -8,11 +8,12 @@ import (
 	"strings"
 )
 
-func usage() string {
-	return `Usage: trunc to/by <bytes> <file>
+func usage() {
+	fmt.Print(`Usage: trunc to/by <bytes> <file>
   Truncates the given file to or by, depending on the first argument, the given
   size in bytes. If the file is already smaller than the desired size, it is
-  truncated to 0 bytes.`
+  truncated to 0 bytes.
+`)
 }
 
 func main() {
